@@ -45,3 +45,28 @@ The following ypthon packages are required to run the simulation:
 - Matplotlib
 
 Additionally, to allow for standalone compilation a Cython (installed with Brian automatically), and a C++ compiler are required. Further information on setup may be found at the Brian2 wiki [HERE](https://brian2.readthedocs.io/en/latest/introduction/install.html#installation-cpp). 
+
+# Example Operation
+```python
+#Import class
+from Simulation import BladderSim
+
+#Import presupplied weights
+from params import parameters
+
+#Specify the path to the required files
+dat = "path/to/bladder_data.mat"
+
+#Specify desired tibial input - here 5Hz for 300s
+tib_params = [5, 300]
+
+#Create object, specify that 20 parallel cores will be used
+sim = BladderSim(dat, parameters, tib_params, cores=20)
+
+#At this point, the network framework has been generated - now will compile this
+#Using the saveloc argument, select a directory and run
+sim.sim_run(saveloc="path/to/desired/directory")
+
+#Plot results
+sim.sim_plot()
+```
