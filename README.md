@@ -1,5 +1,5 @@
 # TibialModulationSim
-A python based simulation of the bladder control circuit and the effects of tibial neuromodulation.
+A python based simulation of the bladder control circuit and the effects of tibial neuromodulation, built in [Brian2](https://github.com/brian-team/brian2).
 
 # Network Topology
 The topology of the network is based upon [previous work](https://pubmed.ncbi.nlm.nih.gov/23033877/). Neurons are simulated using a "Conductancce-Based Adaptive Exponential Linear-Integrate-and-Fire" model [(CAdEx)](https://pubmed.ncbi.nlm.nih.gov/33253029/). Synaptic connections are programmed to dynamically alter their weights according to relative spike timing.
@@ -37,3 +37,10 @@ After compiling and running a simulation, the results may be obtained via the `r
   - Including timestamps (used for optimisation)
 - Activity of tibial neuromodulatory input
 
+# Dependencies
+The following ypthon packages are required to run the simulation:
+- Brian2 (& all required dependencies)
+- SciPy
+- Pandas
+- Matplotlib
+Additionally, to allow for standalone compilation a Cython (installed with Brian automatically), and a C++ compiler are required. Further information on setup may be found at the Brian2 wiki [HERE](https://brian2.readthedocs.io/en/latest/introduction/install.html#installation-cpp). 
