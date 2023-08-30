@@ -11,9 +11,19 @@ The main simulation class `BladderSim` takes the following arguments:
 - `tib_pars` - A list containing tibial modulatory parameters, in the format [frequency (Hz), duration (seconds)]
 - `cores` - The number of parallel cores to use when running the simulation. Defaults to one.
 
-Creation of an object from the `BladderSim` class will generate teh framework (i.e., neurons and synapses) for simulating the system. This will be held as the presently cached device. 
+Creation of an object from the `BladderSim` class will generate the framework (i.e., neurons and synapses) for simulating the system. This will be held as the presently cached device. 
 
 NOTE: To save this framework, it must be compiled as a standalone C++ directory using the `sim_run` method, which will also run the simulation. Initiating a second `BladderSim` object before doing this will overwrite the currently cached framework!
+# Data Organisation
+The .mat file supplied should be structured as so:
+|Data|Description|
+|---|---|
+|pressure|Bladder pressure (cmH2O), will be resampled to 50Hz|
+|raw_signal|The spike-sorted neuronal signal (firing rate). Should be resampled to 50Hz using the `neural_preprocess` method if optimisation/fitting is planned|
+|signal_time|The timestamps for the `raw_signal` info|
+|tpressure|The timestamps for the `pressure` info|
+|tvolume|Timestamps for the `volume` info|
+|volume|Bladder volume (ml), will be resampled to 50Hz|
 
 # Viewing Results
 After compiling and running a simulation, the results may be obtained via the `results` attribute of the object. Doing so will return:
@@ -26,3 +36,4 @@ After compiling and running a simulation, the results may be obtained via the `r
 - Second order sensory afferent activity
   - Including timestamps (used for optimisation)
 - Activity of tibial neuromodulatory input
+
