@@ -39,8 +39,9 @@ After compiling and running a simulation, the results may be obtained via the `r
 
 # Dependencies
 The following ypthon packages are required to run the simulation:
-- Brian2 (& all required dependencies)
+- Brian2 (and all required dependencies)
 - SciPy
 - Pandas
 - Matplotlib
+
 Additionally, to allow for standalone compilation a Cython (installed with Brian automatically), and a C++ compiler are required. Further information on setup may be found at the Brian2 wiki [HERE](https://brian2.readthedocs.io/en/latest/introduction/install.html#installation-cpp). 
