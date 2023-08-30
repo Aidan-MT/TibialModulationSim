@@ -17,12 +17,12 @@ NOTE: To save this framework, it must be compiled as a standalone C++ directory 
 
 # Viewing Results
 After compiling and running a simulation, the results may be obtained via the `results` attribute of the object. Doing so will return:
--Bladder pressure
--Pelvic afferent activity
--Hypogastric afferent activity
--Pelvic efferent activity
--Hypogastric efferent activity
--Pudendal efferent activity
--Second order sensory afferent activity
-  -Including timestamps (used for optimisation)
--Activity of tibial neuromodulatory input
+- Bladder pressure
+- Pelvic afferent activity
+- Hypogastric afferent activity
+- Pelvic efferent activity
+- Hypogastric efferent activity
+- Pudendal efferent activity
+- Second order sensory afferent activity
+  - Including timestamps (used for optimisation)
+- Activity of tibial neuromodulatory input
