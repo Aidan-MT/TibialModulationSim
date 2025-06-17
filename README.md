@@ -13,22 +13,22 @@ This model differs in that it also contains a simulated control circuit and the 
 # Pipeline
 The main simulation function `bladder_sim` takes the following arguments:
 
-    time (float): The duration (in seconds) of bladder and circuit behaviour that should be produced.
+- time (float): The duration (in seconds) of bladder and circuit behaviour that should be produced.
 
-    tibial_parameters (list): The tibial nerve stimulation that is to be applied to the system, formatted as [frequency(Hz), duration(s)] e.g. [1, 1000]
+- tibial_parameters (list): The tibial nerve stimulation that is to be applied to the system, formatted as [frequency(Hz), duration(s)] e.g. [1, 1000]
 
-    parameters (dataframe): The parameters specified in the readme, dictating the weights of the synaptic connections within the model. Imported from params.py 
+- parameters (dataframe): The parameters specified in the readme, dictating the weights of the synaptic connections within the model. Imported from params.py 
 
-    pag (bool, default True): If tibial nerve projections to the Periaquaductal Grey (PAG) should be maintained (True/False)
+- pag (bool, default True): If tibial nerve projections to the Periaquaductal Grey (PAG) should be maintained (True/False)
 
-    pmc (bool, default True): If tibial nerve projections to the Pontine Micturition Centre (PMC) should be maintained (True/False)
+- pmc (bool, default True): If tibial nerve projections to the Pontine Micturition Centre (PMC) should be maintained (True/False)
      
-    spine_aff (bool, default True): If tibial nerve projections to spinal afferents should be maintained (True/False)
+- spine_aff (bool, default True): If tibial nerve projections to spinal afferents should be maintained (True/False)
     
-    random_gen (bool, default False): If the simulation should be provided a seed (i.e., returning the same results for any noise calculation). 
+- random_gen (bool, default False): If the simulation should be provided a seed (i.e., returning the same results for any noise calculation). 
                                   NOTE: If this is set to true and supplied a seed the simulation will act in a non-random manner!
 
-    rand_seed (int, default 1): Seed for any random noise calculation 
+- rand_seed (int, default 1): Seed for any random noise calculation 
 
 Creation of a simulation run using the `bladder_sim` function will generate the framework (i.e., neurons and synapses) for simulating the system. This will be held as the presently cached device during the simulation's run. After the simulation has been run the cache will be cleared. 
 
