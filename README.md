@@ -102,8 +102,10 @@ sim = bladder_sim(
 #Once it has finished, we may take a look at some results, e.g., plotting urine volume over the course of the simulation
 plt.plot(sim[1])
 ```
+![ExampleRun](https://github.com/user-attachments/assets/7f61b6b3-03d1-4567-acb7-6097ddd663c7)
 
 # Contact
 To contact the research team, please email the corresponding author Aidan McConnell-Trevillion at:
 
  a.mcconnell-trevillion@ed.ac.uk
+
