@@ -83,8 +83,8 @@ from Simulation import *
 #Import presupplied weights
 from params import parameters
 
-#Specify desired tibial input - here 5Hz for 300s
-tib_params = [5, 300]
+#Specify desired tibial input - here 1Hz for 300s
+tib_params = [1, 300]
 
 #Call the function, saving the results to the sim variable 
 sim = bladder_sim(
