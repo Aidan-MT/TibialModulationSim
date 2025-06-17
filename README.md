@@ -108,6 +108,11 @@ plt.ylabel("Bladder Volume (As $m^3$)")
 ```
 ![ExampleRun](https://github.com/user-attachments/assets/7f61b6b3-03d1-4567-acb7-6097ddd663c7)
 
+# Citing This Work
+If you use our repository for your published research, we kindly ask you to cite our article:
+
+> McConnell-Trevillion Aidan, Jabbari Milad, Ju Wei, Lister Elliot, Erfanian Abbas, Mitra Srinjoy, Nazarpour Kianoush (2025) Low-Frequency Tibial Neuromodulation Increases Voiding Activity - a Human Pilot Study and Computational Model eLife 14:RP106174, https://doi.org/10.7554/eLife.106174.1
+
 # Contact
 To contact the research team, please email the corresponding author Aidan McConnell-Trevillion at:
 
