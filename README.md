@@ -40,7 +40,9 @@ A set of pre-fit synaptic weights have been supplied with this GitHub repository
 Details on the location of each synaptic weight within the circuit may be found within params.py. 
 
 # Viewing Results
-After compiling and running a simulation, the function will return a list of variables containing key measurements from both the bladder and control circuit. The list is structured as so:
+After compiling and running a simulation, the function will return a list of variables containing key measurements from both the bladder and control circuit. Importantly, unless otherwise specified the results are returned at a sample rate of 50Hz. In other words, each "step" of the simulation represents an increment of 20ms duration. 
+
+The list is structured as so:
 
 
 |           Variable            |                                                 Definition                                                 |
