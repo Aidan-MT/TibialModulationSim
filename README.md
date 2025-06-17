@@ -36,31 +36,31 @@ Creation of a simulation run using the `bladder_sim` function will generate the 
 # Paramter import
 A set of pre-fit synaptic weights have been supplied with this GitHub repository (as a list, in params.py). For the simulation to behave as expected these must be imported and called as an argument in the bladder_sim function. 
 
-#Details on the location of each synaptic weight within the circuit may be found within params.py. 
+Details on the location of each synaptic weight within the circuit may be found within params.py. 
 
 # Viewing Results
 After compiling and running a simulation, the function will return a list of variables containing key measurements from both the bladder and control circuit. The list is structured as so:
 
-+-------------------------------+------------------------------------------------------------------------------------------------------------+
-    |           Variable            |                                                 Definition                                                 |
-    +-------------------------------+------------------------------------------------------------------------------------------------------------+
-    | pressure                      | Bladder pressure (cmh20) for the simulation run (array)                                                    |
-    | volume                        | Bladder volume (m3) for the simulation run (array)                                                         |
-    | bladder_pressure_mon.t/second | Timestamps associated with the bladder pressure array (for plotting as seconds without needing to convert) |
-    | pel_aff                       | Firing rate of pelvic afferents over the course of the simulation (hz)                                     |
-    | pel_out                       | Firing rate of pelvic efferents over the course of the simulation (hz)                                     |
-    | hyp_out                       | Firing rate of hypogastric efferents over the course of the simulation (hz)                                |
-    | pud_out                       | Firing rate of pudendal efferents over the course of the simulation (hz)                                   |
-    | asc                           | Firing rate of second order spinal afferents over the course of the simulation (hz)                        |
-    | asc_timestamps                | Timestamps for the second order spinal afferents to allow plotting without unit conversion                 |
-    | tib                           | Firing rate of the tibial nerve projections (hz)                                                           |
-    | pel_spikes                    | Timestamps for individual spikes from one pelvic efferent                                                  |
-    | hyp_spikes                    | Timestamps for individual spikes from one hypogastric efferent                                             |
-    | pud_spikes                    | Timestamps for individual spikes from one pudendal efferent                                                |
-    | des_mon                       | Firing rate for primary brainstem output (hz)                                                              |
-    | des_spikes                    | Timestamps for individual spikes from one primary brainstem efferent                                       |
-    | bladder_secondary_state_mon   | All biophysical information recorded from the bladder during the simulation                                |
-    +-------------------------------+------------------------------------------------------------------------------------------------------------+
+
+|           Variable            |                                                 Definition                                                 |
+|-------------------------------|------------------------------------------------------------------------------------------------------------|
+| pressure                      | Bladder pressure (cmh20) for the simulation run (array)                                                    |
+| volume                        | Bladder volume (m3) for the simulation run (array)                                                         |
+| bladder_pressure_mon.t/second | Timestamps associated with the bladder pressure array (for plotting as seconds without needing to convert) |
+| pel_aff                       | Firing rate of pelvic afferents over the course of the simulation (hz)                                     |
+| pel_out                       | Firing rate of pelvic efferents over the course of the simulation (hz)                                     |
+| hyp_out                       | Firing rate of hypogastric efferents over the course of the simulation (hz)                                |
+| pud_out                       | Firing rate of pudendal efferents over the course of the simulation (hz)                                   |
+| asc                           | Firing rate of second order spinal afferents over the course of the simulation (hz)                        |
+| asc_timestamps                | Timestamps for the second order spinal afferents to allow plotting without unit conversion                 |
+| tib                           | Firing rate of the tibial nerve projections (hz)                                                           |
+| pel_spikes                    | Timestamps for individual spikes from one pelvic efferent                                                  |
+| hyp_spikes                    | Timestamps for individual spikes from one hypogastric efferent                                             |
+| pud_spikes                    | Timestamps for individual spikes from one pudendal efferent                                                |
+| des_mon                       | Firing rate for primary brainstem output (hz)                                                              |
+| des_spikes                    | Timestamps for individual spikes from one primary brainstem efferent                                       |
+| bladder_secondary_state_mon   | All biophysical information recorded from the bladder during the simulation                                |
+
   
 
 # Dependencies
