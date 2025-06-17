@@ -5,7 +5,8 @@ A python based simulation of the bladder control circuit and the effects of tibi
 The topology of the network is based upon [previous work](https://pubmed.ncbi.nlm.nih.gov/23033877/). Neurons are simulated using a "Conductancce-Based Adaptive Exponential Linear-Integrate-and-Fire" model [(CAdEx)](https://pubmed.ncbi.nlm.nih.gov/33253029/). Synaptic connections are programmed to dynamically alter their weights according to relative spike timing.
 
 # Bladder Simulation
-The biophysical model of the bladder utilised in this simulation approach is adapted from the publication authored by Lister et al. 2024 (10.1101/2024.11.21.624716). 
+The biophysical model of the bladder utilised in this simulation approach is adapted from the publication authored by [Lister et. al.](https://doi.org/10.1101/2024.11.21.624716). 
+
 Further detail of this model, and a link to a GitHub repository may be found there. 
 
 This model differs in that it also contains a simulated control circuit and the option to modulate the system via the tibial nerve. 
