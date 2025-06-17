@@ -101,6 +101,8 @@ sim = bladder_sim(
 
 #Once it has finished, we may take a look at some results, e.g., plotting urine volume over the course of the simulation
 plt.plot(sim[1])
+plt.xlabel("Elapsed Time (As 20ms Intervals)")
+plt.ylabel("Bladder Volume (As $m^3$)")
 ```
 ![ExampleRun](https://github.com/user-attachments/assets/7f61b6b3-03d1-4567-acb7-6097ddd663c7)
 
